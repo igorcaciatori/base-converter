@@ -48,9 +48,9 @@ int main() {
         int ok = 0;
         if (origin == 2)  
             ok = (number[i] == '0' || number[i] == '1');
-        if (origin == 10) 
+        else if (origin == 10) 
             ok = (number[i] >= '0' && number[i] <= '9');
-        if (origin == 16) 
+        else if (origin == 16) 
             ok = (number[i] >= '0' && number[i] <= '9') || (number[i] >= 'A' && number[i] <= 'F');
         if (!ok) {
             printf("Invalid number for base %i.\n", origin);
